@@ -17,7 +17,8 @@
 #block {
     width: 50px;
     height: 500px;
-    background-color: black;
+    background-color: #d0ff4f;
+    border: 1px solid black;
     position: relative;
     left: 400px;
     animation: block 2s infinite linear;
@@ -27,7 +28,8 @@
     width: 50px;
     height: 150px;
     background-color: white;
-    opacity: 0.90;
+    border: 1px solid white;
+    opacity: 0.6;
     position: relative;
     left: 400px;
     animation: block 2s infinite linear;
@@ -46,6 +48,13 @@
 }
 
 
+
+.scores{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Shantell Sans', cursive;
+   float: right;
+}
 
 @keyframes block {
     0% {
