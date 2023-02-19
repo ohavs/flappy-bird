@@ -26,11 +26,13 @@ setInterval(function () {
     var holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     var cTop = -(500 - characterTop);
     if ((characterTop > 480) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
-        alert("Game over. Score: " + (counter));
+        // Swal.fire('Any fool can use a computer')
+        alert("Game over. Score: " + (counter)  + " Click to play again");
         // text.classList.remove("hide")
         // score.innerHTML+=counter-1
         character.style.top = 100 + "px";
         counter = 0;
+        
     }
 }, 10);
 
